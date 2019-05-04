@@ -1,0 +1,128 @@
+.left-content {
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+.left-content .left-header {
+    width: 100%;
+    height: 30%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+    /* background-color: aquamarine; */
+}
+
+.left-content .left-header .avatar {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: url("../../IMG/AVATAR/user.png");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+.left-content .left-header .nome {
+    width: 100%;
+    height: 40px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    /* background-color: aqua; */
+}
+
+.left-content .btns {
+    margin-top: 50px;
+    width: 100%;
+    height: 30%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+    /* background-color: blue; */
+}
+
+.left-content .btns .btn {
+    width: 100%;
+    height: 30%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    cursor: pointer;
+    /* background-color: cadetblue; */
+}
+
+.left-content .btns .btn .container {
+    width: 90%;
+    height: 100%;
+    display: var(--flex);
+    flex-wrap: var(--wrap);
+    /* background-color: coral; */
+}
+
+.left-content .btns .btn .container .icon {
+    width: 30%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    /* background-color: red; */
+}
+
+.left-content .btns .btn .container .icon img {
+    width: 20%;
+}
+
+.left-content .btns .btn .container .text {
+    width: 70%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: flex-start;
+    align-items: var(--center);
+    color: var(--fColor);
+    /* background-color: rebeccapurple; */
+}
+
+.left-content .logout {
+    cursor: pointer;
+    margin-top: 70px;
+    width: 100%;
+    height: 10%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    /* background-color: aquamarine; */
+}
+
+.left-content .logout form {
+    width: 80%;
+    height: 100%;
+    display: var(--flex);
+    flex-wrap: var(--wrap);
+    cursor: pointer;
+    /* background-color: rebeccapurple; */
+}
+
+.left-content .logout form input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    color: var(--fColor);
+    text-align: initial;
+    cursor: pointer;
+}
+
+.left-content .logout form .icon {
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.left-content .logout form .icon img {
+    width: 40%;
+}

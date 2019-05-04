@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    height: 620px;
+    background-color: var(--laranja);
+    background-image: url("../../IMG/HEADER/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .headerContent {
+    width: 100%;
+    height: 500px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    /* background-color: aqua; */
+}
+
+.header .headerContent .container {
+    margin-top: 10px;
+    width: 40%;
+    height: 70%;
+    /* background-color: blueviolet; */
+}
+
+.header .headerContent .container .title {
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    color: #fff;
+    font-size: 65pt;
+    font-family: 'Staatliches', cursive;
+    /* background-color: aquamarine; */
+}
+
+.header .headerContent .container .sub {
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    text-align: center;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -20px;
+    /* background-color: rebeccapurple; */
+}
+
+.header .headerContent .container .btnContainer {
+    width: 100%;
+    height: 50%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    /* background-color: brown; */
+}
+
+.btnContainer .btn {
+    width: 180px;
+    height: 50px;
+    background-color: var(--laranja);
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    transition: .5s;
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.07);
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnContainer .btn:hover {
+    background-color: rgb(233, 122, 67);
+    transition: .5s;
+}
+
+.btnContainer .btn a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    text-align: center;
+    /* background-color: rgba(0, 255, 255, 0.281); */
+}

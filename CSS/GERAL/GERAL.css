@@ -1,0 +1,13 @@
+:root {
+    --center: center;
+    --flex: flex;
+    --wrap: wrap;
+    --flex-start: flex-start;
+    --space-around: space-around;
+    --laranja: #FF874A;
+    --azul: #004063;
+    --cinza: #3f3f3f;
+    --cinza2: #f7f7f7;
+    --cinza3: rgb(190, 190, 190);
+    --cinza4: rgb(156, 156, 156);
+}
