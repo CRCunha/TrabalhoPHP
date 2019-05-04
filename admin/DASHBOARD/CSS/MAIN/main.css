@@ -4,6 +4,7 @@ main {
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
+    flex-wrap: wrap;
     text-align: center;
     /* background-color: aqua; */
 }

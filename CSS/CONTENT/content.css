@@ -1,0 +1,64 @@
+.content {
+    margin-top: -550px;
+    width: 100%;
+    /* background-color: rgb(233, 233, 233); */
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.content .container {
+    width: 80%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.content form {
+    width: 50%;
+    height: 150px;
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+    margin-bottom: 20px;
+    color: #646464;
+}
+
+.content .container .post {
+    background-color: #fff;
+    width: 90%;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.08);
+    color: #646464;
+}
+
+.content .container .post .cd-post {
+    background-color: #3f3f3f;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+}
+
+.content .container .post .titulo-post {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content .container .post .texto {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.content .container .post .resumo {
+    font-size: 10pt;
+}

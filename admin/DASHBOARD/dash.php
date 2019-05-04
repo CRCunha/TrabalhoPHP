@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="CSS/NORMALIZE/NORMALIZE.css">
     <link rel="stylesheet" href="CSS/LEFT/left-content.css">
     <link rel="stylesheet" href="CSS/MAIN/main.css">
+    <link rel="stylesheet" href="CSS/MAIN/inclui.css">
     <script src="JS/logout.js" type="text/JavaScript"></script>
     <!--FONTES-->
 
@@ -70,16 +71,40 @@
     </div>
     <main id="conteudo">
         <?php
-            echo("ingnorar o menu laterial e colocar todas as 'funcs' aqui");
-            echo("<br>Ou criar uma pagina de dashboard para cada 'func'");
-            echo("<br>Caso criar para cada 'func, colocar auto scroll smooth");
-            include('../conecta.php');
             error_reporting(0);
             if($_REQUEST['login'] == 'Sair'){
                 session_destroy();
                 header("Location: ../index.php");
             }
         ?>
+        <!-- INCLUI 
+        <div class="inclui">
+            <div class="titulo">Incluir</div>
+            <form method="post">
+                <input type="text" name="titulo" placeholder="titulo">
+                <input type="text" name="resumo" placeholder="resumo">
+                <input type="text" name="texto" placeholder="texto">
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+        <!-- EXCLUI --> 
+        <!-- <div class="inclui">
+            <div class="titulo">Excluir</div>
+            <form method="post">
+                <input type="text" name="titulo" placeholder="titulo">
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+        <!-- MODIFICA --> 
+        <!-- <div class="inclui">
+            <div class="titulo">Modifica</div>
+            <form method="post">
+                <input type="text" name="titulo" placeholder="titulo">
+                <input type="text" name="resumo" placeholder="resumo">
+                <input type="text" name="texto" placeholder="texto">
+                <input type="submit" value="enviar">
+            </form>
+        </div> -->
     </main>
 </body>
 </html>

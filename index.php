@@ -19,8 +19,7 @@
     <link rel="stylesheet " href="CSS/SERVICES/services.css ">
     <link rel="stylesheet " href="CSS/SERVICES/cards.css ">
     <link rel="stylesheet " href="CSS/TRABALHOS/trabalhos.css ">
-    <link rel="stylesheet " href="CSS/SECTION1/section1.css ">
-    <link rel="stylesheet " href="CSS/SECTION2/section2.css ">
+    <link rel="stylesheet" href="CSS/CONTENT/content.css">
     <!--FONTES-->
     <link href="https://fonts.googleapis.com/css?family=Staatliches " rel="stylesheet ">
     <link href="https://fonts.googleapis.com/css?family=Roboto " rel="stylesheet ">
@@ -68,7 +67,7 @@
                     <div class="cardHeader ">
                         <div class="container ">
                             <img src="IMG/SERVICES/CARDS/pictures.png ">
-                            <div class="title " style="margin-left:-32% "> Entrega</div>
+                            <div class="title " style="margin-left:-32% "> EDITAR</div>
                         </div>
                     </div>
                     <div class="text ">
@@ -80,7 +79,7 @@
                     <div class="cardHeader ">
                         <div class="container ">
                             <img src="IMG/SERVICES/CARDS/pictures.png ">
-                            <div class="title "> Compromisso</div>
+                            <div class="title " style="margin-left:-32% "> EDITAR</div>
                         </div>
                     </div>
                     <div class="text ">
@@ -92,7 +91,7 @@
                     <div class="cardHeader ">
                         <div class="container ">
                             <img src="IMG/SERVICES/CARDS/pictures.png ">
-                            <div class="title "  style="margin-left:-32% "> Serviço</div>
+                            <div class="title "  style="margin-left:-32% "> EDITAR</div>
                         </div>
                     </div>
                     <div class="text ">
@@ -111,6 +110,14 @@
             </div>
         </div>
         <div class="sub ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam provident commodi ex magni saepe, culpa distinctio.</div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <?php 
+                include("conecta.php");
+                include("consulta.php");
+            ?>
+        </div>
     </div>
 </body>
 
