@@ -77,34 +77,16 @@
                 header("Location: ../index.php");
             }
         ?>
-        <!-- INCLUI 
+        <!--INCLUI -->
         <div class="inclui">
             <div class="titulo">Incluir</div>
-            <form method="post">
+            <form method="post" action="inclui.php">
                 <input type="text" name="titulo" placeholder="titulo">
                 <input type="text" name="resumo" placeholder="resumo">
                 <input type="text" name="texto" placeholder="texto">
-                <input type="submit" value="enviar">
+                <input type="submit" name="enviar" value="enviar">
             </form>
         </div>
-        <!-- EXCLUI --> 
-        <!-- <div class="inclui">
-            <div class="titulo">Excluir</div>
-            <form method="post">
-                <input type="text" name="titulo" placeholder="titulo">
-                <input type="submit" value="enviar">
-            </form>
-        </div>
-        <!-- MODIFICA --> 
-        <!-- <div class="inclui">
-            <div class="titulo">Modifica</div>
-            <form method="post">
-                <input type="text" name="titulo" placeholder="titulo">
-                <input type="text" name="resumo" placeholder="resumo">
-                <input type="text" name="texto" placeholder="texto">
-                <input type="submit" value="enviar">
-            </form>
-        </div> -->
     </main>
 </body>
 </html>
