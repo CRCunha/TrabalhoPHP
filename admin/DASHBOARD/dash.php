@@ -37,7 +37,7 @@
                     <div class="icon">
                         <img src="IMG/BTNS/add.png">
                     </div>
-                    <div class="text">Adicionar</div>
+                    <div class="text">Incluir</div>
                 </div>
             </div>
             <!-- BTN 2-->
@@ -79,11 +79,11 @@
         ?>
         <!--INCLUI -->
         <div class="inclui">
-            <div class="titulo">Incluir</div>
+            <div class="titulo">INCLUIR</div>
             <form method="post" action="inclui.php">
-                <input type="text" name="titulo" placeholder="titulo">
-                <input type="text" name="resumo" placeholder="resumo">
-                <input type="text" name="texto" placeholder="texto">
+                <input type="text" name="titulo" placeholder="titulo" autocomplete="off"> 
+                <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
+                <input type="text" name="texto" placeholder="texto" autocomplete="off">
                 <input type="submit" name="enviar" value="enviar">
             </form>
         </div>

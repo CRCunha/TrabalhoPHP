@@ -2,28 +2,21 @@
 include("conecta.php");
 include("consulta_form.php");
 
-
 $inicial = "";
-
 $sqlAux = "";
-
 $ordenacao = "ASC";
 
 if(isset($_REQUEST['enviar'])){
-	
 	$inicial = $_REQUEST['inicial'];
 	$ordenacao = $_REQUEST['ordenacao'];
 }
 
 if ($inicial != ""){
-		
-		$sqlAux = " where titulo LIKE '$inicial%' ";
+	$sqlAux = " where titulo LIKE '$inicial%' ";
 }
 $sql = "select cdpost,titulo,resumo,texto from posts $sqlAux order by cdpost $ordenacao";
 
-
 try {
-	
 	$consulta = $link->prepare($sql);
 	$consulta->execute();
 
