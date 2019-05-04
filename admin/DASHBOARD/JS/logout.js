@@ -1,7 +1,18 @@
-function adicionar() {
-    var el;
+function deletar() {
 
-    el = document.getElementById("conteudo");
+    function mover() {
+        el = document.getElementById("conteudo");
+        window.scrollBy(0, 3100);
+        scrolldelay = setTimeout(el.pageScroll, 1000);
+    }
+}
 
-    el.innerHTML = "    include('../conecta.php');error_reporting(0);if($_REQUEST['login'] == 'Sair'){ header('Location: ../index.php');}"
+
+function editar() {
+
+    function mover() {
+        el = document.getElementById("conteudo");
+        window.scrollBy(0, 3100);
+        scrolldelay = setTimeout(el.pageScroll, 3000);
+    }
 }

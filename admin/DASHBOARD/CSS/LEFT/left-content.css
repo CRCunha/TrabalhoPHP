@@ -126,3 +126,8 @@
 .left-content .logout form .icon img {
     width: 40%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--fColor);
+}

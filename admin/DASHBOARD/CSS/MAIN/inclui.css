@@ -16,7 +16,7 @@
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
-    background-color: #cecece;
+    background-color: #646464;
     color: #fff;
 }
 
@@ -31,6 +31,17 @@
 }
 
 input[type=text] {
+    width: 65%;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #646464;
+    text-align: center;
+    padding: 25px 45px;
+    color: #646464;
+}
+
+input[type=number] {
     width: 65%;
     margin-right: 20px;
     background-color: transparent;

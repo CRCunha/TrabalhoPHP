@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Cristian</title>
+    <title>DashBoard</title>
     <!--METAS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,25 +37,25 @@
                     <div class="icon">
                         <img src="IMG/BTNS/add.png">
                     </div>
-                    <div class="text">Incluir</div>
+                    <div class="text"><a href="#incluir">Incluir</a></div>
                 </div>
             </div>
             <!-- BTN 2-->
-            <div class="btn">
+            <div class="btn" onclick="deletar()">
                 <div class="container">
                     <div class="icon">
                         <img src="IMG/BTNS/del.png">
                     </div>
-                    <div class="text">Deletar</div>
+                    <div class="text"><a href="#excluir">Deletar</a></div>
                 </div>
             </div>
             <!-- BTN 3-->
-            <div class="btn">
+            <div class="btn" onclick="editar()">
                 <div class="container">
                     <div class="icon">
                         <img src="IMG/BTNS/edit.png">
                     </div>
-                    <div class="text">Editar</div>
+                    <div class="text"><a href="#editar">Editar</a></div>
                 </div>
             </div>
         </div>
@@ -78,10 +78,29 @@
             }
         ?>
         <!--INCLUI -->
-        <div class="inclui">
+        <div class="inclui" id="incluir">
             <div class="titulo">INCLUIR</div>
             <form method="post" action="inclui.php">
-                <input type="text" name="titulo" placeholder="titulo" autocomplete="off"> 
+                <input type="text" name="titulo" placeholder="Título" autocomplete="off"> 
+                <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
+                <input type="text" name="texto" placeholder="texto" autocomplete="off">
+                <input type="submit" name="enviar" value="enviar">
+            </form>
+        </div>
+        <!--EXCLUIR -->
+        <div class="inclui" id="excluir">
+            <div class="titulo">DELETAR</div>
+            <form method="post" action="exclui.php">
+                <input type="text" name="titulo" placeholder="Digite o Título" autocomplete="off"> 
+                <input type="number" name="cdpost" placeholder="Digite o Código" autocomplete="off"> 
+                <input type="submit" name="deletar" value="deletar">
+            </form>
+        </div>
+        <!--EDITAR -->
+        <div class="inclui" id="editar">
+            <div class="titulo">EDITAR</div>
+            <form method="post" action="inclui.php">
+                <input type="text" name="titulo" placeholder="Título" autocomplete="off"> 
                 <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
                 <input type="text" name="texto" placeholder="texto" autocomplete="off">
                 <input type="submit" name="enviar" value="enviar">
