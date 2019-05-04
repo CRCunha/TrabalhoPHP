@@ -41,7 +41,7 @@
         </nav>
         <div class="headerContent ">
             <div class="container ">
-                <div class="title ">Cristian Cunha  </div>
+                <div class="title ">IFSUL Pelotas </div>
                 <div class="sub ">Projeto de PHP</div>
                 <div class="btnContainer ">
                     <div class="btn ">

@@ -6,6 +6,7 @@
     justify-content: var(--space-around);
     align-items: var(--center);
     flex-wrap: var(--wrap);
+    background-color: #f7f7f7;
 }
 
 .content .container {
@@ -18,13 +19,30 @@
 }
 
 .content form {
-    width: 50%;
+    width: 60%;
     height: 150px;
     display: var(--flex);
     justify-content: var(--space-around);
     align-items: var(--center);
     margin-bottom: 20px;
     color: #646464;
+}
+
+.content form [type='text'] {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px var(--laranja);
+}
+
+.content form [type='submit'] {
+    width: 90px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.08);
+    color: var(--laranja);
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .content .container .post {
@@ -38,7 +56,7 @@
 }
 
 .content .container .post .cd-post {
-    background-color: #3f3f3f;
+    background-color: var(--laranja);
     color: #fff;
     width: 30px;
     height: 30px;
