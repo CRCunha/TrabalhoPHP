@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="CSS/LEFT/left-content.css">
     <link rel="stylesheet" href="CSS/MAIN/main.css">
     <link rel="stylesheet" href="CSS/MAIN/inclui.css">
+    <link rel="stylesheet" href="CSS/EXCLUIR/excluir.css">
     <script src="JS/logout.js" type="text/JavaScript"></script>
     <!--FONTES-->
 
@@ -77,35 +78,40 @@
                 header("Location: ../index.php");
             }
         ?>
-        <!--INCLUI -->
-        <div class="inclui" id="incluir">
-            <div class="titulo">INCLUIR</div>
-            <form method="post" action="inclui.php">
-                <input type="text" name="titulo" placeholder="Título" autocomplete="off"> 
-                <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
-                <input type="text" name="texto" placeholder="texto" autocomplete="off">
-                <input type="submit" name="enviar" value="enviar">
-            </form>
-        </div>
-        <!--EXCLUIR -->
-        <div class="inclui" id="excluir">
-            <div class="titulo">DELETAR</div>
-            <form method="post" action="exclui.php">
-                <input type="text" name="titulo" placeholder="Digite o Título" autocomplete="off"> 
-                <input type="number" name="cdpost" placeholder="Digite o Código" autocomplete="off"> 
-                <input type="submit" name="deletar" value="deletar">
-            </form>
-        </div>
-        <!--EDITAR -->
-        <div class="inclui" id="editar">
-            <div class="titulo">EDITAR</div>
-            <form method="post" action="inclui.php">
-                <input type="text" name="titulo" placeholder="Título" autocomplete="off"> 
-                <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
-                <input type="text" name="texto" placeholder="texto" autocomplete="off">
-                <input type="submit" name="enviar" value="enviar">
-            </form>
-        </div>
+            <!--INCLUI -->
+            <div class="inclui" id="incluir">
+                <div class="titulo">INCLUIR</div>
+                <form method="post" action="inclui.php">
+                    <input type="text" name="titulo" placeholder="Título" autocomplete="off">
+                    <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
+                    <input type="text" name="texto" placeholder="texto" autocomplete="off">
+                    <input type="submit" name="enviar" value="enviar">
+                </form>
+            </div>
+            <!--EXCLUIR -->
+            <div class="inclui" id="excluir">
+                <div class="titulo">DELETAR</div>
+                <div class="containerDeletar">
+                    <?php
+                    include("consulta.php");
+                    ?>
+                </div>
+                <form style="height: 250px;" method="post" action="exclui.php">
+                    <input type="number" name="cdpost" placeholder="Digite o Numero do Post" autocomplete="off">
+                    <input style="margin-top: -40px" type="submit" name="deletar" value="deletar">
+                </form>
+            </div>
+            <!--EDITAR -->
+            <div class="inclui" id="editar">
+                <div class="titulo">EDITAR</div>
+                <form method="post" action="inclui.php">
+                    <input type="text" name="titulo" placeholder="Título" autocomplete="off">
+                    <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
+                    <input type="text" name="texto" placeholder="texto" autocomplete="off">
+                    <input type="submit" name="enviar" value="enviar">
+                </form>
+            </div>
     </main>
 </body>
+
 </html>
