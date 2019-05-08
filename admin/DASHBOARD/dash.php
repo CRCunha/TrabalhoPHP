@@ -85,6 +85,7 @@
                     <input type="text" name="titulo" placeholder="Título" autocomplete="off">
                     <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
                     <input type="text" name="texto" placeholder="texto" autocomplete="off">
+                    <input type="text" name="imagem" placeholder="Link da Imagem" autocomplete="off">
                     <input type="submit" name="enviar" value="enviar">
                 </form>
             </div>

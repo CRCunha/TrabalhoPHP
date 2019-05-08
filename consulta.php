@@ -14,7 +14,7 @@ if(isset($_REQUEST['enviar'])){
 if ($inicial != ""){
 	$sqlAux = " where titulo LIKE '$inicial%' ";
 }
-$sql = "select cdpost,titulo,resumo,texto from posts $sqlAux order by cdpost $ordenacao";
+$sql = "select cdpost,titulo,resumo,texto from posts $sqlAux order by data $ordenacao";
 
 try {
 	$consulta = $link->prepare($sql);
@@ -22,12 +22,22 @@ try {
 
 	while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
 		$cdpost = $registro['cdpost'];
-		
-		$titulo = utf8_encode($registro['titulo']);
-		$resumo = utf8_encode($registro['resumo']);
-		$texto = utf8_encode($registro['texto']);
+		$data = strftime('%Y/%m/%d', strtotime($registro['data']));
+		$titulo = utf8_decode($registro['titulo']);
+		$resumo = utf8_decode($registro['resumo']);
+		$texto = utf8_decode($registro['texto']);
+		$img = $registro['imagem'];
 
-		echo("<div class='post'><div class='cd-post'>$cdpost</div>  <div class='titulo-post'>$titulo</div>  <div clas='resumo'>$resumo</div>  <div class='texto'>$texto</div></div>");
+		echo("<div class='post'>
+			<div class='header-post'>
+				<div class='cd-post'>$cdpost</div>
+				<div class='imagem'><img src='$img' /></div>
+			</div> 
+			<div class='titulo-post'>$titulo</div>  
+			<div clas='resumo'>$resumo</div>  
+			<div class='texto'>$texto</div> 
+			$data
+		</div>");
 	}
 }
 catch(PDOException $ex){

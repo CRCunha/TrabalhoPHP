@@ -27,7 +27,9 @@
     <!--FAV ICON-->
     <link rel="shortcut icon " href="IMG/HEADER/Logo.png " />
 </head>
-<?php ?>
+<?php
+    error_reporting(0); 
+?>
 <body>
     <!-- HEADER -->
     <div class="header ">
