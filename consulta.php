@@ -6,7 +6,7 @@ $inicial = "";
 $sqlAux = "";
 $ordenacao = "ASC";
 
-if(isset($_REQUEST['enviar'])){
+if(isset($_REQUEST['enviar'])){	
 	$inicial = $_REQUEST['inicial'];
 	$ordenacao = $_REQUEST['ordenacao'];
 }
@@ -14,7 +14,7 @@ if(isset($_REQUEST['enviar'])){
 if ($inicial != ""){
 	$sqlAux = " where titulo LIKE '$inicial%' ";
 }
-$sql = "select cdpost,titulo,resumo,texto from posts $sqlAux order by data $ordenacao";
+$sql = "select cdpost,titulo,resumo,texto,imagem, data from posts $sqlAux order by data $ordenacao";
 
 try {
 	$consulta = $link->prepare($sql);
@@ -22,16 +22,16 @@ try {
 
 	while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
 		$cdpost = $registro['cdpost'];
-		$data = strftime('%Y/%m/%d', strtotime($registro['data']));
+		$data = strftime('%d/%m/%Y', strtotime($registro['data']));
 		$titulo = utf8_decode($registro['titulo']);
 		$resumo = utf8_decode($registro['resumo']);
 		$texto = utf8_decode($registro['texto']);
-		$img = $registro['imagem'];
+		$imagem = utf8_decode($registro['imagem']);
 
 		echo("<div class='post'>
 			<div class='header-post'>
 				<div class='cd-post'>$cdpost</div>
-				<div class='imagem'><img src='$img' /></div>
+				<div class='imagem'><img src='IMG/POST/$imagem' /></div>
 			</div> 
 			<div class='titulo-post'>$titulo</div>  
 			<div clas='resumo'>$resumo</div>  

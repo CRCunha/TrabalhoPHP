@@ -82,10 +82,10 @@
             <div class="inclui" id="incluir">
                 <div class="titulo">INCLUIR</div>
                 <form method="post" action="inclui.php">
-                    <input type="text" name="titulo" placeholder="Título" autocomplete="off">
-                    <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
+                    <input style="width: 32%" type="text" name="titulo" placeholder="Título" autocomplete="off">
+                    <input style="width: 32%" type="text" name="resumo" placeholder="resumo" autocomplete="off">
                     <input type="text" name="texto" placeholder="texto" autocomplete="off">
-                    <input type="text" name="imagem" placeholder="Link da Imagem" autocomplete="off">
+                    <input type="text" name="imagem" placeholder="Imagem" autocomplete="off">
                     <input type="submit" name="enviar" value="enviar">
                 </form>
             </div>
