@@ -2,6 +2,10 @@
     overflow-y: auto;
 }
 
+#editar {
+    overflow-y: auto;
+}
+
 .containerDeletar {
     margin-top: 20px;
     width: 80%;

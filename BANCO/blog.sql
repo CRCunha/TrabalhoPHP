@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 13-Maio-2019 às 00:59
+-- Generation Time: 13-Maio-2019 às 11:55
 -- Versão do servidor: 10.1.38-MariaDB
 -- versão do PHP: 7.3.3
 
@@ -46,7 +46,7 @@ INSERT INTO `posts` (`cdpost`, `titulo`, `resumo`, `texto`, `imagem`, `posicao`,
 (1, 'FenÃƒÂ´meno da Internet', '', 'Todas estas questÃƒÂµes, devidamente ponderadas, levantam dÃƒÂºvidas sobre se o fenÃƒÂ´meno da Internet exige a precisÃƒÂ£o e a definiÃƒÂ§ÃƒÂ£o do sistema de formaÃƒÂ§ÃƒÂ£o de quadros que corresponde ÃƒÂ s necessidades.', 'internet.png', 'right', '2019-05-12'),
 (2, 'NÃƒÂ£o obstante', '', 'NÃƒÂ£o obstante, a hegemonia do ambiente polÃƒÂ­tico maximiza as possibilidades por conta das posturas dos ÃƒÂ³rgÃƒÂ£os dirigentes com relaÃƒÂ§ÃƒÂ£o ÃƒÂ s suas atribuiÃƒÂ§ÃƒÂµes.', 'mundo.png', 'right', '2019-05-12'),
 (3, 'A expansÃƒÂ£o dos mercados mundiais', '', 'Evidentemente, a expansÃƒÂ£o dos mercados mundiais nos obriga ÃƒÂ  anÃƒÂ¡lise das direÃƒÂ§ÃƒÂµes preferenciais no sentido do progresso.', 'economia.png', 'right', '2019-05-12'),
-(4, 'PreferÃƒÂªncias de consumo', '', 'Gostaria de enfatizar que o acompanhamento das preferÃƒÂªncias de consumo maximiza as possibilidades por conta de alternativas ÃƒÂ s soluÃƒÂ§ÃƒÂµes ortodoxas.', 'compras.png', 'right', '2019-05-12');
+(4, 'Preferências de consumo kk', '', 'Gostaria de enfatizar que o acompanhamento das preferÃƒÂªncias de consumo maximiza as possibilidades por conta de alternativas ÃƒÂ s soluÃƒÂ§ÃƒÂµes ortodoxas.', 'compras.png', 'right', '2019-05-12');
 
 --
 -- Indexes for dumped tables

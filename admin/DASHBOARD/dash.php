@@ -105,11 +105,18 @@
             <!--EDITAR -->
             <div class="inclui" id="editar">
                 <div class="titulo">EDITAR</div>
-                <form method="post" action="inclui.php">
-                    <input type="text" name="titulo" placeholder="Título" autocomplete="off">
-                    <input type="text" name="resumo" placeholder="resumo" autocomplete="off">
-                    <input type="text" name="texto" placeholder="texto" autocomplete="off">
-                    <input type="submit" name="enviar" value="enviar">
+                <div class="containerDeletar" style="margin-bottom: 50px">
+                    <?php
+                    include("consulta.php");
+                    ?>
+                </div>
+                <form method="get" action="edita.php">
+                    <input type="number" name="cdpost" placeholder="Digite o Numero do Post" autocomplete="off">
+                    <input type="text" name="titulo" placeholder="Mudar Título" autocomplete="off">
+                    <input type="text" name="resumo" placeholder="Muar Resumo" autocomplete="off">
+                    <input type="text" name="texto" placeholder="Mudar Texto" autocomplete="off">
+                    <input type="text" name="imagem" placeholder="Mudar Imagem" autocomplete="off">
+                    <input type="submit" name="editar" value="editar">
                 </form>
             </div>
     </main>
