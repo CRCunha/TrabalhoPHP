@@ -3,14 +3,14 @@ include("conecta.php");
 
 if(isset($_REQUEST['editar'])){
     $cdpost = $_REQUEST['cdpost'];
-    $titulo = utf8_decode($_REQUEST['titulo']);
-	$resumo = utf8_decode($_REQUEST['resumo']);
-	$texto = utf8_decode($_REQUEST['texto']);
-    $imagem = utf8_decode($_REQUEST['imagem']);
+    $titulo = utf8_encode($_REQUEST['titulo']);
+	$resumo = utf8_encode($_REQUEST['resumo']);
+	$texto = utf8_encode($_REQUEST['texto']);
+    $imagem = utf8_encode($_REQUEST['imagem']);
 	if ($_REQUEST['editar'] == 'editar'){
 
 		try {
-			$sql = "update posts set titulo='$titulo' where cdpost=$cdpost";
+			$sql = "update posts set titulo='$titulo', resumo='$resumo', texto='$texto', imagem='$imagem' where cdpost=$cdpost";
             $consulta = $link->prepare($sql);
 			$consulta->execute();
 
